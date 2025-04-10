@@ -1,0 +1,36 @@
+name: festival_diary_app
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies: #แพ็กเกจตรงนี้ใช้ในการเขียนโค้ด
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  font_awesome_flutter: ^10.8.0
+  dio: ^5.8.0+1
+  image_picker: ^1.1.2
+
+dev_dependencies: #แพ็กเกจตรงนี้แค่มาช่วยในการ Dev.
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  icons_launcher: ^3.0.1
+
+icons_launcher:
+  image_path: "assets/icon/icon.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
