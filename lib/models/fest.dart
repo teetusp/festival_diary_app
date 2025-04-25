@@ -3,7 +3,7 @@ class Fest {
   String? festName;
   String? festDetail;
   String? festState;
-  String? festCost;
+  double? festCost;
   int? userId;
   String? festImage;
   int? festNumDay;
@@ -23,7 +23,7 @@ class Fest {
     festName = json['festName'];
     festDetail = json['festDetail'];
     festState = json['festState'];
-    festCost = json['festCost'];
+    festCost = double.parse(json['festCost'].toString());
     userId = json['userId'];
     festImage = json['festImage'];
     festNumDay = json['festNumDay'];
